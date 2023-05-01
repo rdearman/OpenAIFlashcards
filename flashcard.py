@@ -19,7 +19,7 @@ openai.api_key = config['OPENAPI']['OPENAI_API_KEY']
 
 def generate_flashcards(topic):
     # Define the prompt for generating flashcards
-    prompt = f"Generate aproximately 200 flashcards for the topic '{topic}' in csv format, with no duplication. The format of the csv should be like this: 'Question';;'Answer'"
+    prompt = f"Generate aproximately 200 flashcards for the topic '{topic}' in csv format, with no duplication. The format of the csv should be like this: 'Question';'Answer'"
 
     # Generate the flashcards using OpenAI's GPT-3 API
     response = openai.Completion.create(
